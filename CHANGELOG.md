@@ -7,6 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0](https://github.com/InspectorHub/OpenInspection/compare/openinspection-v2.1.0...openinspection-v2.2.0) (2026-09-13)
+
+
+### Features
+
+* **ui:** add cross-platform icons and sync scanner-probe middleware ([c8943d7](https://github.com/InspectorHub/OpenInspection/commit/c8943d737632889c15738a6c3ba1bdd6cca483b0))
+* **ui:** add cross-platform icons, PWA manifest, and fold scanner probes ([feb4a34](https://github.com/InspectorHub/OpenInspection/commit/feb4a34441f66f50f0e4e3c02041cb55f27317c3))
+
+
+### Bug Fixes
+
+* **pwa,scanner:** restore manifest scope/shortcuts, add maskable icon, fold scanner probes ([a5ba8c3](https://github.com/InspectorHub/OpenInspection/commit/a5ba8c36ed8980fd8a77d17d9584843ec5a2da91))
+
 ## [2.1.0](https://github.com/InspectorHub/OpenInspection/compare/openinspection-v2.0.0...openinspection-v2.1.0) (2026-09-12)
 
 
