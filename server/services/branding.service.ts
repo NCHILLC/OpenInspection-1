@@ -19,6 +19,8 @@ export interface IntegrationConfig {
     googleOAuthMode?: 'platform' | 'own';
     /** Cloudflare Stream customer subdomain for the self-host Stream video backend. */
     streamCustomerSubdomain?: string;
+    /** Who holds a report that has been sent to ISN: OpenInspection's own gate (default) or ISN's. */
+    isnReportAccess?: 'openinspection' | 'isn';
 }
 
 // C-15 (2026-06-06): the legacy `SecretsConfig` shape (camelCase keys in the

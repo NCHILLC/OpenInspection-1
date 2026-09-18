@@ -20,7 +20,6 @@ import { tenantConfigs } from '../../lib/db/schema';
 import { withMcpMetadata } from "../../lib/route-metadata-standards";
 import { getDrizzle } from '../../lib/route-helpers';
 
-
 // ─── Integration Config & Secrets ────────────────────────────────────────────
 
 export const IntegrationConfigSchema = z.object({ // closed on purpose: features/plan-quota/ai-caps.ts
@@ -28,6 +27,7 @@ export const IntegrationConfigSchema = z.object({ // closed on purpose: features
     turnstileSiteKey: z.string().optional().describe('TODO describe turnstileSiteKey field for the OpenInspection MCP integration'),
     googleClientId: z.string().optional().describe('TODO describe googleClientId field for the OpenInspection MCP integration'),
     streamCustomerSubdomain: z.string().optional().describe('Cloudflare Stream customer subdomain for self-host Stream video backend (e.g. customer.cloudflarestream.com).'),
+    isnReportAccess: z.enum(['openinspection', 'isn']).optional().describe("Who holds a report once its link is on the ISN order: 'openinspection' (default) keeps this app's agreement/payment gate; 'isn' releases it so ISN's own payment/signature hold governs."),
 }).openapi('IntegrationConfig');
 
 // C-15 (2026-06-06): SecretsInputSchema + the POST /config/secrets route were
